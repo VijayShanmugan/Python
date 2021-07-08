@@ -1,0 +1,102 @@
+from tkinter import*
+r=Tk()
+r.title("HANG MAN")
+r.config(bg="orange")
+r.geometry("1000x1000")
+u=Label(r,text="LET'S PLAY HANG MAN",font=("algerian",50),fg="purple")
+u.place(x=200,y=0)
+t=Label(r,text="your no of chances:4",font=("Bold",15))
+t.place(x=100,y=100)
+def k():
+    w1.config(text="r")
+def l():
+    w2.config(text="h")
+    w5.config(text="h")
+def m():
+    w4.config(text="t")
+def n():
+    w6.config(text="m")
+def o():
+    w3.config(text="y")
+h=["your no of chances:3","your no of chances:2","your no of chances:1","u are hanged"]
+a=[0,1,2,3,4]
+    
+def v():
+    if (a[0]<4):
+        t.config(text=h[0])
+        h.remove(h[0])
+        a.remove(a[0])
+    else:
+        r.destroy()
+        
+    
+        
+        
+        
+w1=Button(r,text='___',font=("algebrian",13 ),width="5",height="2",bg="light blue")
+w1.place(x=350,y=100)
+w2=Button(r,text='___',font=("algebrian",13 ),width="5",height="2",bg="light blue")
+w2.place(x=415,y=100)
+w3=Button(r,text='___',font=("algebrian",13 ),width="5",height="2",bg="light blue")
+w3.place(x=480,y=100)
+w4=Button(r,text='___',font=("algebrian",13 ),width="5",height="2",bg="light blue")
+w4.place(x=545,y=100)
+w5=Button(r,text='___',font=("algebrian",13 ),width="5",height="2",bg="light blue")
+w5.place(x=610,y=100)
+w6=Button(r,text='___',font=("algebrian",13 ),width="5",height="2",bg="light blue")
+w6.place(x=675,y=100)
+w=Button(r,text='q',font=("algebrian",13 ),width="5",height="2",bg="light green",command=v)
+w.place(x=300,y=250)
+w=Button(r,text='w',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=365,y=250)
+w=Button(r,text='e',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=430,y=250)
+w=Button(r,text='r',font=('algebrain',13),width="5",height="2",bg="light green",command=k)
+w.place(x=495,y=250)
+w=Button(r,text='t',font=('algebrain',13),width="5",height="2",bg="light green",command=m)
+w.place(x=560,y=250)
+w=Button(r,text='y',font=('algebrain',13),width="5",height="2",bg="light green",command=o)
+w.place(x=625,y=250)
+w=Button(r,text='u',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=690,y=250)
+w=Button(r,text='i',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=755,y=250)
+w=Button(r,text='o',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=820,y=250)
+w=Button(r,text='p',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=885,y=250)
+w=Button(r,text='a',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=325,y=308)
+w=Button(r,text='s',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=390,y=308)
+w=Button(r,text='d',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=455,y=308)
+w=Button(r,text='f',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=520,y=308)
+w=Button(r,text='g',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=585,y=308)
+w=Button(r,text='h',font=('algebrain',13),width="5",height="2",bg="light green",command=l)
+w.place(x=650,y=308)
+w=Button(r,text='j',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=715,y=308)
+w=Button(r,text='k',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=780,y=308)
+w=Button(r,text='l',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=845,y=308)
+w=Button(r,text='z',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=375,y=366)
+w=Button(r,text='x',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=440,y=366)
+w=Button(r,text='c',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=505,y=366)
+w=Button(r,text='v',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=570,y=366)
+w=Button(r,text='b',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=635,y=366)
+w=Button(r,text='n',font=('algebrain',13),width="5",height="2",bg="light green",command=v)
+w.place(x=700,y=366)
+w=Button(r,text='m',font=('algebrain',13),width="5",height="2",bg="light green",command=n)
+w.place(x=765,y=366)
+
+    
+r.mainloop()
